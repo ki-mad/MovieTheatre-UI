@@ -44,7 +44,7 @@ class Headers extends Component {
                     <Dropdown.Menu>
                       <Dropdown.Item
                         icon="movie"
-                        href="#"
+                        href="/add_movie"
                         text="Add Movie"
                       />
                       <Dropdown.Item
