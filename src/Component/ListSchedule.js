@@ -21,6 +21,7 @@ class ListSchedule extends Component {
     console.log(idStudio)
     // console.log(idStudio)
     const data = this.state.dataShow;
+    console.log(data)
     // const studio = this.state.dataShow.studio_id;
     // console.log(studio);
     const filteredData = data.filter(data => {
@@ -30,13 +31,13 @@ class ListSchedule extends Component {
           moment(new Date()).format("YYYY-MM-DD")
       );
     });
-    console.log(data);
+    // console.log(data);
     return (
       <div>
         {filteredData.map((item, index) => (
           <Link to={`/seat/${item.id}`} key={index}>
             <Button key={index} basic color="blue">
-              {item.showTime.substring(0, 5)}
+              {item.showTimes.substring(0, 5)}
             </Button>
           </Link>
         ))}
